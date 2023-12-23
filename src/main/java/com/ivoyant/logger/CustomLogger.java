@@ -1,10 +1,10 @@
-package com.ivoyant;
+package com.ivoyant.logger;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class CustomLogger {
-    private static final Logger logger = LogManager.getLogger();
+    public static Logger logger = LogManager.getLogger();
 
     public static void warn(String message) {
         logger.warn(message);
@@ -15,7 +15,7 @@ public class CustomLogger {
     }
 
     public static void info(String message) {
-        logger.error(message);
+        logger.info(message);
     }
 
     public static void debug(String message) {
