@@ -3,7 +3,7 @@ package com.ivoyant.password;
 import com.ivoyant.constants.StringConstants;
 
 public class PasswordValidator {
-    private static int getScore(String password) {
+    public static int getScore(String password) {
         // if password is generated successfully
         if (password != null) {
             // variable to store password score
